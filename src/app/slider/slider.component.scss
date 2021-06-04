@@ -62,10 +62,9 @@
     background: $color-2;
   }
   .swiper-container-horizontal .swiper-pagination {
-    background-color: $color-6;
     @media (max-width: 425px) {
+      background-color: $color-6;
       transform: translateX(-10px);
-
     }
   }
 
