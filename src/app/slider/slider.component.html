@@ -1,0 +1,12 @@
+<div class="slider">
+  <div class="swiper-button-prev sliderbtn toggle-hide"></div>
+  <div class="swiper-container pb-3" [swiper]="swiperConfig">
+    <div class="swiper-wrapper">
+      <div *ngFor="let card of cards; let i = index" class="swiper-slide">
+        <app-slide [card]="card"></app-slide>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="swiper-button-next sliderbtn toggle-hide"></div>
+</div>

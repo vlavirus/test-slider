@@ -1,0 +1,11 @@
+<div class="slide">
+  <div class="slide-header">
+    <img src="{{ card.cardImage }}" alt="card-img">
+    <div class="slide-header__text">
+      <h4>{{ card.cardUserName }}</h4>
+      <div>{{ card.cardUserPosition }}</div>
+    </div>
+  </div>
+  <div class="slide-description" [class.fit-content]="toggleText">{{ card.cardUserDescription }}</div>
+  <button *ngIf="card.cardUserDescription.length >= descriptionMaxLength" class="slide-button" (click)="isToggleText()">{{ toggleText ? 'less' : 'read more' }}</button>
+</div>

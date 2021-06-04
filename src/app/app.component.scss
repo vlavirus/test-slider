@@ -1,0 +1,43 @@
+@import 'src/assets/scss/variables';
+
+:host {
+  padding: 0;
+  margin: 0;
+  h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 44px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+}
+.wrapper {
+  margin-left: 200px;
+  background: $color-5;
+  padding: 52px 34px 60px 50px;
+  @media(max-width: 768px) {
+    margin-left: 0;
+  }
+  @media(max-width: 426px) {
+    padding: 30px 0 40px 20px;
+  }
+}
+
+.app__header {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  @media(max-width: 1401px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  @media(max-width: 577px) {
+    text-align: start !important;
+  }
+}

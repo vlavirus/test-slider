@@ -1,0 +1,88 @@
+@import 'src/assets/scss/variables';
+
+.slide {
+  background: $color-1;
+  box-shadow: 0px 2px 5px rgba(125, 125, 146, 0.2);
+  border-radius: 5px;
+  padding: 20px 25px 20px 20px;
+  min-height: 220px;
+  @media(max-width: 1200px) {
+    min-height: 235px;
+  }
+  @media(max-width: 576px) {
+    min-height: 245px;
+  }
+  @media(max-width: 425px) {
+    padding: 16px 16px 24px 16px;
+  }
+  &:hover {
+    box-shadow: 0px 2px 15px rgba(125, 125, 146, 0.4);
+  }
+  &-header  {
+    display: flex;
+    width: auto;
+    margin-bottom: 16px;
+    img {
+      height: fit-content;
+      width: fit-content;
+      margin-right: 12.5px;
+    }
+    &__text {
+      width: 60%;
+      h4 {
+        margin-top: 0;
+        margin-bottom: 3px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      div {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        color: $color-4;
+        @media(max-width: 425px) {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  &-description {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    height: 88px;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  &-button {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-2;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    &:hover {
+      color: $color-3;
+    }
+  }
+}
+
+.fit-content {
+  display: block;
+  height: fit-content;
+}
