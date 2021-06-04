@@ -123,4 +123,10 @@
       transform: translateX(-10px);
     }
   }
+
+  .toggle-hide {
+    @media (max-width: 425px) {
+      display: none;
+    }
+  }
 }
